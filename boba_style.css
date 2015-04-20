@@ -36,7 +36,7 @@ a {
 }
 body {
 	background-color: rgba(74, 224, 84, 1);
-	font-family: Lucida Grande, Helvetica, Calibri;
+	font-family: 'Open Sans', Helvetica, Calibri;
 }
 nav#nav-bar {
 	position: fixed;
@@ -80,7 +80,7 @@ ul {
 }
 
 li {
-	display: inline;
+	display: inline-block;
 }
 
 li.nav-link a
@@ -108,12 +108,12 @@ li a:hover{
 	max-height: 100%;
 }
 
-#body
+#main
 {
+	padding-top: 100px;
 	position: absolute;
 	min-height: 100%;
 	float: right;
-	width: 85%;
 	background-color: rgba(235, 235, 235, 1);
 	top: 0;
 	right: 0;
@@ -121,14 +121,43 @@ li a:hover{
 	-webkit-box-shadow: 0px 0px 5px 0px #000000;
 	-moz-box-shadow: 0px 0px 5px 0px #000000;
 	box-shadow: 0px 0px 5px 0px #000000;
+	position: fixed; 
+    overflow-y: scroll;
+    width: 85%;
 }
 
 div#wrapper {
 	display: block;
 }
+ h1
+ {
+ 	text-align: center;
+ 	font-size: 1.2em;
+ 	font-family: 'Raleway';
+ 	text-decoration: underline;
+ 	margin-bottom: 10px;
+ }
 div#statement {
 	display: block;
-	text-align: center;
-	width: 40%;
+	text-align: justify;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top :30px; 
 	height: 40%;
+
+}
+
+#main-pic
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60%;
+}
+#footer
+{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
 }
