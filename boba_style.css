@@ -194,15 +194,16 @@ table#products{
 }
 
 table#products td{
-	height: 50px;
+	height: 20px;
 	vertical-align: bottom;
+	text-align: center;
+	font-weight: bold;
 }
 
 td img{
-	color:black;
-	text-align:center;
 	max-height: 200px;
 	max-width: 200px;
 	padding: 10px;
 	margin: 20px;
 }
+
