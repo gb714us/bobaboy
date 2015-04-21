@@ -306,10 +306,11 @@ div#statement {
     bottom: 0;
     text-align: center;
 }
-/*table#products{
+
+table#products{
 	width: 50%;
 	height: 80%;
-}*/
+}
 
 .div-float {
     width: 50%;
@@ -337,17 +338,17 @@ table {
 }
 
 table#products td {
-    /*height: 20px;*/
-    /*vertical-align: bottom;*/
+    height: 20px;
+    vertical-align: bottom;
     
     text-align: center;
     font-weight: bold;
 }
 
-<<<<<<< HEAD
+
 td img {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 100px;
+    max-width: 100px;
     padding: 10px;
     margin: 20px;
 }
@@ -356,7 +357,9 @@ td img {
     display: block;
     text-align: center;
     margin: 10px 13%;
-=======
+}
+/*}
+/*=======*/
 table#products td img{
 	max-height: 200px;
 	max-width: 200px;
@@ -386,4 +389,4 @@ p#description{
 	margin-right: 10px;
 	clear: both;
 }
->>>>>>> origin/master
+
