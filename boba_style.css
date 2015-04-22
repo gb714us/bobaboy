@@ -371,22 +371,29 @@ h2#story{
  	text-align: left;
  	font-size: 2.0em;
  	font-family: 'Raleway';
- 	margin-bottom: 10px;
- 	margin-left: 50px;
+ 	margin: 10px;
  	font-weight: bold;
 }
 
+#story2
+{
+	width: 40%;
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: 450px;
+}
 p#description{
 	margin-top: 20px;
-	margin-left: 50px;
-	display: block;
+	margin-left: 20px;
 	text-align: justify;
-	width: 40%;
+	/*width: 40%;*/
 }
 
 #aboutImage{
-	float: right;
 	margin-right: 10px;
-	clear: both;
+	margin-bottom: 100px;
+	width: 50%;
+	height: 100%;
 }
+
 
