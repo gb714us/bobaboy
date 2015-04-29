@@ -18,17 +18,51 @@ function processForm(){
   for(var i=0; i<blist.length; i++){
     if (blist[i].checked){
         blistChecked[blistChecked.length] = blist[i];
-        text = text + blistChecked[blistChecked.length-1].value;
     }
   }
 
-  if(blistChecked.length != 0 && rating.value != "")
+  if(name == "" || phone == "" || email == "")
   {
-    var text = "Thank you for your feedback!";
+    text = "Please fill in your contact information!";
+    alert(text);  
+    return;
   }
   else
   {
-    var text = "Please choose the purchased drinks and rate!";
+    var nameRE = new RegExp(/[a-zA-Z]([\s,.'-a-zA-Z])?$/);
+    var emailRE = new RegExp(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/);
+    var phoneRE = new RegExp(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/);
+
+    if(nameRE.test(name) && emailRE.test(email) && phoneRE.test(phone))
+    {
+      if(blistChecked.length != 0 && rating.value != "")
+      {
+        text = "Thank you for your feedback!";
+      }
+      else
+      {
+        text = "You forgot to select your order or your rating!";
+      }
+      alert(text);
+      return;
+    }
+    else
+    {
+      if(!nameRE.test(name))
+      {
+        text = "Name is invalid";
+      }
+      else if(!emailRE.test(email))
+      {
+        text = "Email is invalid";
+      }
+      else if(!phoneRE.test(phone))
+      {
+        text = "Phone is invalid";
+      }
+      alert(text);
+      return;
+    }
   }
-  alert(text);
+
 }
