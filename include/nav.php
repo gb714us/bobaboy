@@ -7,6 +7,7 @@
         <li class="nav-link"><a href="menu.php">Menu</a></li>
         <li class="nav-link"><a href="locations.php">Locations</a></li>
         <li class="nav-link"><a href="about.php">About</a></li>
+        <li class="nav-link"><a href="feedback.php">Contact Us</a></li>
     </ul>
 </nav>
 <div class="container">
