@@ -16,21 +16,19 @@
 <body>
     <?php include 'include/nav.php';?>
     <div id="main">
-        <div id="content">
+        <div id="content" style="float: left;">
             <form id = "profileForm" action="" onsubmit="processForm()">
               <fieldset>
                 <table id="formOrder">
                   <tr>
-                    <th colspan="2"><h1>Review Us!</th>
+                    <th colspan="2"><h1>Review Us!</h1></th>
                   </tr>
                   <tr>
                       <td>Name:</td>
                       <td><input type="text" name ="name" size="30" /></td>
-                      <td>Comments:</td>
                       <tr>
                       <td>Email:</td>
                       <td><input type="text" name ="email" size="30" /></td>
-                      <td rowspan="5"><input type="text" name ="comments" size="30" /></td>
                       </tr>
                       <tr>
                       <td>Phone Number:</td>
@@ -82,11 +80,14 @@
                 </tr>     
                   
                 </table>
+
               </fieldset>
           </form>
 
-          <script type="text/javascript" src="src/scripts.js"></script>
+          <script type="text/javascript" src="scripts/feedback.js"></script>
         </div>
+        <h2 style="margin: 25px;">Comments</h2>
+                <input type="text" name ="comments" size="500" style="width: 300px; height:300px" />
     </div>
 </body>
 
