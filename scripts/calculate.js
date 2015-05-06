@@ -21,20 +21,6 @@ var drinkArr = ["Almond Milk Tea",
 var result_id = "order-result";
 function calculate()
 {
-	var email = document.getElementById("orderForm").getElementsByTagName("input")[0].value;
-	
-	var emailRE = new RegExp(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/);
-	
-	if(emailRE.test(email))
-	{
-		alert("Your total is $" + parseFloat(Math.round(total * 100)/ 100).toFixed(2));
-		return true;
-	}
-	else{
-		alert("Please enter a valid email address!");
-		return false;
-	}
-	
 	var total = 0;
 	var result = "";
 	var elements = document.getElementsByClassName('order');
@@ -61,10 +47,19 @@ function calculate()
 
 	document.getElementById(result_id).setAttribute("name", result);
 
-
-
-	alert("Your total is: " + parseFloat(Math.round(total * 100)/ 100).toFixed(2));
-
+	var email = document.getElementById("orderForm").getElementsByTagName("input")[0].value;
+	
+	var emailRE = new RegExp(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/);
+	
+	if(emailRE.test(email))
+	{
+		alert("Your total is $" + parseFloat(Math.round(total * 100)/ 100).toFixed(2));
+		return true;
+	}
+	else{
+		alert("Please enter a valid email address!");
+		return false;
+	}
 }
 
 function addToCart(number)
