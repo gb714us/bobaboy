@@ -24,11 +24,8 @@
         <li class="nav-link"><a href="about.php">About</a></li>
         <li class="nav-link"><a href="feedback.php">Contact Us</a></li>
     </ul>
-<<<<<<< HEAD
     <?php include("include/welcome.php");?>
-=======
 </div>
->>>>>>> 66abe49b4a6d871bf1c0688d1b909778a8ead157
 </nav>
 <div class="container">
     <div id="side">
