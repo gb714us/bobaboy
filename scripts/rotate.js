@@ -13,7 +13,7 @@ function rotate()
 	holder.src = imageArr[current];
 	++current;
 
-	if (current == 6) current = 0;
+	if (current == 7) current = 0;
 
 }
 
