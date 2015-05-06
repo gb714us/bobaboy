@@ -1,12 +1,9 @@
 <?php
-    
-$messageToBusiness =
-    "Order: ".$drinks."\r\n".
-    "Quantity: ".$_POST['rating']."\r\n".
-    "Total Cost: ".$_POST['cost']."\r\n";
+
+$messageToBusiness = $_POST['order-result'];
 
 $headerToBusiness = "From: $_POST[email]\r\n";
-mail("bobaboy2015@gmail.com", $_POST['cost'], $messageToBusiness, $headerToBusiness);
+mail("bobaboy2015@gmail.com", $_POST['email'], $messageToBusiness, $headerToBusiness);
 
 $messageToClient =
     "Dear ".$_POST['email'].":\r\n".
@@ -16,7 +13,7 @@ $messageToClient =
     "Le Favorite Boba Shop\r\n------------------------\r\n";
 
 $headerToClient = "From: bobaboy2015@gmail.com\r\n";
-mail($_POST['email'], "Re: ".$_POST['cost'], $messageToClient, $headerToClient);
+mail($_POST['email'], "Re: ".$_POST['email'], $messageToClient, $headerToClient);
 
 $display = str_replace("\r\n", "<br />\r\n", $messageToClient);
 $display =

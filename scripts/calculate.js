@@ -45,7 +45,7 @@ function calculate()
 	result += "\n--------------------------------------------------------------------------\n\n" +
 		"Complete Total: " + parseFloat(Math.round(total * 100)/ 100).toFixed(2);
 
-	document.getElementById(result_id).setAttribute("name", result);
+	document.getElementById(result_id).setAttribute("value", result);
 
 	var email = document.getElementById("orderForm").getElementsByTagName("input")[0].value;
 	
