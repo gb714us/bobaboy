@@ -7,10 +7,10 @@
     <meta title="description" content="description">
     <meta title="contents" content="contents">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <link rel="stylesheet" type="text/css" href="boba_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/boba_style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="rotate.js"></script>
+    <script type="text/javascript" src="scripts/rotate.js"></script>
     <title>Moba Boba</title>
 </head>
 

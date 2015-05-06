@@ -1,4 +1,4 @@
-<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="scripts/menu.js"></script>
 <nav id="nav-bar">
     <a href="boba.php" title="">
         <img id="logo" src="images/moba.png" alt="">

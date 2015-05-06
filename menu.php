@@ -7,23 +7,11 @@
     <meta title="description" content="description">
     <meta title="contents" content="contents">
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <link rel="stylesheet" type="text/css" href="boba_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/boba_style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-    <script src="calculate.js"></script>
+    <script src="scripts/calculate.js"></script>
     <title>Moba Boba</title>
-
-    <script>
-    function addToCart(number)
-    {
-        if (document.getElementById("select-" + number).value > 0)
-            alert("Added to order!");
-            return true;
-        else
-            alert("Please select a quantity!")
-            return false;
-    }
-    </script>
 
 </head>
 
