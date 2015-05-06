@@ -13,3 +13,148 @@ Date received: 6th of May, 2015 at 06:27:42
 
 -------------------------------------------------------
 Date received: 6th of May, 2015 at 06:28:13
+
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:33:52
+
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:37:56
+
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:41:40
+calculate()
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:43:02
+calculate()
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:43:13
+return calculate();
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:44:16
+calculate()
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:47:09
+return calculate()
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:48:54
+
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:53:14
+
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:56:44
+
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 06:57:15
+
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 07:03:05
+
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 07:09:38
+Almond Milk Tea:
+	 Quantity: 2 Boba Surcharge: 0.00		 Total: $6
+Caramel Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Chocolate Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Coconut Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Coffee Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Honeydew Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Honey Green Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Honey Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Tapioca Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Jasmine Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Matcha Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Red Bean Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Strawberry Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Taro Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Thai Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+
+--------------------------------------------------------------------------
+
+Complete Total: 6.00
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 07:11:05
+Almond Milk Tea:
+	 Quantity: 2 Boba Surcharge: 0.00		 Total: $6
+Caramel Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Chocolate Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Coconut Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Coffee Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Honeydew Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Honey Green Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Honey Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Tapioca Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Jasmine Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Matcha Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Red Bean Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Strawberry Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Taro Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Thai Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+
+--------------------------------------------------------------------------
+
+Complete Total: 6.00
+-------------------------------------------------------
+Date received: 6th of May, 2015 at 07:11:29
+Almond Milk Tea:
+	 Quantity: 3 Boba Surcharge: 1.50		 Total: $10.5
+Caramel Milk Tea:
+	 Quantity: 3 Boba Surcharge: 1.50		 Total: $10.5
+Chocolate Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Coconut Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Coffee Milk Tea:
+	 Quantity: 2 Boba Surcharge: 1.00		 Total: $7
+Honeydew Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Honey Green Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Honey Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Tapioca Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Jasmine Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Matcha Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Red Bean Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Strawberry Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Taro Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+Thai Milk Tea:
+	 Quantity: 0 Boba Surcharge: 0.00		 Total: $0
+
+--------------------------------------------------------------------------
+
+Complete Total: 28.00

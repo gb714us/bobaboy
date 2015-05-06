@@ -43,7 +43,7 @@ function calculate()
 	}
 	
 	result += "\n--------------------------------------------------------------------------\n\n" +
-		"Complete Total: " + parseFloat(Math.round(total * 100)/ 100).toFixed(2);
+		"Complete Total: " + parseFloat(Math.round(total * 100)/ 100).toFixed(2) +"\n";
 
 	document.getElementById(result_id).setAttribute("value", result);
 

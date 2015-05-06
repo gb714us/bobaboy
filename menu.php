@@ -18,7 +18,7 @@
     <?php include 'include/nav.php';?>
     <div id="main">
         <div id="content">
-            <form id="orderForm" action="scripts/processOrder.php" method="post">
+            <form id="orderForm" onsubmit="return calculate();" action="scripts/processOrder.php" method="post">
                 <fieldset>
                     <div class="statement" style="text-align: center; height:auto; width:70%; margin: 0 auto; ">
                         <p>ALL DRINKS ARE $3.00. BOBA IS ADDITIONAL 50&cent;.</p>
@@ -26,7 +26,7 @@
                             Email: <input type="text" name ="email" size="30" />
                             <input type="submit" value="DONE" style="margin: 30px;"/>
                         </div>
-                        <input type="hidden" id="order-result" name="order-result" value="<?php echo $messageToBusiness;?>"/>
+                        <input type="hidden" id="order-result" name="order-result"/>
                     </div>
                         <div id="content" style="width:70%; margin: 0 auto;">
                             <table id="products">
