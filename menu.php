@@ -19,13 +19,14 @@
     <?php include 'include/nav.php';?>
     <div id="main">
         <div id="content">
-             <form id = "orderForm" action="scripts/processOrder.php" method="post">
+             <form id = "orderForm" onsubmit="return calculate();" action="scripts/processOrder.php" method="post">
               <fieldset>
 
         <div class="statement" style="text-align: center; height:auto; width:70%; margin: 0 auto; ">
         <p>ALL DRINKS ARE $3.00. BOBA IS ADDITIONAL 50&cent;.</p>
         <div style="display:block; margin-left: auto; margin-right: auto">
-            <input type="button" name="DONE" value="DONE" onclick="calculate()" style="margin: 30px;">
+            Email: <input type="text" name ="email" size="30" />
+            <input type="submit" value="DONE" style="margin: 30px;" />
         </div>
         </div>
         <div id="content" style="width:70%; margin: 0 auto;">
@@ -67,7 +68,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(1)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(1)"/>
                         </td>
                     </tr>
             </table>  
@@ -97,7 +98,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(2)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(2)"/>
                         </td>
                     </tr>
             </table>  
@@ -127,7 +128,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(3)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(3)"/>
                         </td>
                     </tr>
             </table>  
@@ -170,7 +171,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(4)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(4)"/>
                         </td>
                     </tr>
             </table>  
@@ -200,7 +201,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(5)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(5)"/>
                         </td>
                     </tr>
             </table>  
@@ -230,7 +231,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(6)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(6)"/>
                         </td>
                     </tr>
             </table>  
@@ -273,7 +274,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(7)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(7)"/>
                         </td>
                     </tr>
             </table>  
@@ -303,7 +304,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(8)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(8)"/>
                         </td>
                     </tr>
             </table>  
@@ -333,7 +334,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(9)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(9)"/>
                         </td>
                     </tr>
             </table>  
@@ -376,7 +377,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(10)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(10)"/>
                         </td>
                     </tr>
             </table>  
@@ -406,7 +407,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(11)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(11)"/>
                         </td>
                     </tr>
             </table>  
@@ -436,7 +437,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(12)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(12)"/>
                         </td>
                     </tr>
             </table>  
@@ -479,7 +480,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(13)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(13)"/>
                         </td>
                     </tr>
             </table>  
@@ -509,7 +510,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(14)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(14)"/>
                         </td>
                     </tr>
             </table>  
@@ -539,7 +540,7 @@
                         <td style="display: block">
                             
                         <br />
-                        <button id="submitButton" type="submit" onclick="return addToCart(15)">Add to cart</button>
+                        <input id="submitButton" type="button" value="Add to cart" onclick="addToCart(15)"/>
                         </td>
                     </tr>
             </table>  

@@ -1,31 +1,22 @@
 <?php
-
-$drinks = array(15);
-
-for ($x = 1; $x <15; $x++)
-{
-    if($_POST['quantity'.$x] > "0")
-    {
-        array_push($drinks, )
-    }
-}
-
+    
 $messageToBusiness =
     "Order: ".$drinks."\r\n".
-    "Quantity: ".$_POST['rating']."\r\n";
+    "Quantity: ".$_POST['rating']."\r\n".
+    "Total Cost: ".$_POST['cost']."\r\n";
 
 $headerToBusiness = "From: $_POST[email]\r\n";
-mail("bobaboy2015@gmail.com", $_POST['name'], $messageToBusiness, $headerToBusiness);
+mail("bobaboy2015@gmail.com", $_POST['cost'], $messageToBusiness, $headerToBusiness);
 
 $messageToClient =
-    "Dear ".$_POST['name'].":\r\n".
-    "The following message was received from you by Moba Boba:\r\n\r\n".
+    "Dear ".$_POST['email'].":\r\n".
+    "The following order was received from you by Moba Boba:\r\n\r\n".
     $messageToBusiness.
-    "------------------------\r\nThank you for the feedback and your business.\r\n" .
+    "------------------------\r\nThank you for your business. Here is your receipt. We look forward to serving you again.\r\n" .
     "Le Favorite Boba Shop\r\n------------------------\r\n";
 
 $headerToClient = "From: bobaboy2015@gmail.com\r\n";
-mail($_POST['email'], "Re: ".$_POST['name'], $messageToClient, $headerToClient);
+mail($_POST['email'], "Re: ".$_POST['cost'], $messageToClient, $headerToClient);
 
 $display = str_replace("\r\n", "<br />\r\n", $messageToClient);
 $display =
@@ -34,7 +25,7 @@ $display =
     "</tt></body></html>";
 echo $display;
 
-$fileVar = fopen("../data/feedback.txt", "a")
+$fileVar = fopen("../data/order.txt", "a")
     or die("Error: Could not open the log file.");
 fwrite($fileVar, "\n-------------------------------------------------------\n")
     or die("Error: Could not write to the log file.");

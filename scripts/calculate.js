@@ -16,14 +16,30 @@ function calculate()
 
 		total += drinks * DRINK_COST + boba;
 	}
-
-	alert("Your total is $" + parseFloat(Math.round(total * 100)/ 100).toFixed(2))
+	
+	var email = document.getElementById("orderForm").getElementsByTagName("input")[0].value;
+	
+	var emailRE = new RegExp(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/);
+	
+	if(emailRE.test(email))
+	{
+		alert("Your total is $" + parseFloat(Math.round(total * 100)/ 100).toFixed(2));
+		return true;
+	}
+	else{
+		alert("Please enter a valid email address!");
+		return false;
+	}
 }
 
 function addToCart(number)
     {
-        if (document.getElementById("select-" + number).value > 0)
+        if (document.getElementById("select-" + number).value > 0){
             alert("Added to order!");
-        else
-            alert("Please select a quantity!")
+			return true;
+		}
+        else{
+            alert("Please select a quantity!");
+			return false;
+		}
     }
