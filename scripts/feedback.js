@@ -1,18 +1,18 @@
 function processForm(){
   var profileFormObject = document.getElementById("profileForm");
 
-  var name = profileFormObject.name.value;
+  var name = profileFormObject.getElementsByTagName("input")[0].value;
+  
+  var email = profileFormObject.getElementsByTagName("input")[1].value;
 
-  var email = profileFormObject.email.value;
+  var phone = profileFormObject.getElementsByTagName("input")[2].value;
 
-  var phone = profileFormObject.phone.value;
-
-  var blist = profileFormObject.elements["drink"];
+  var blist = document.getElementsByName("drink[]");
 
   var blistChecked = [];
 
-  var rating = profileFormObject.elements["rating"];
-
+  var rating = document.getElementsByName("rating");
+  var selectedRating = "";
   var text = "";
 
   for(var i=0; i<blist.length; i++){
@@ -20,12 +20,20 @@ function processForm(){
         blistChecked[blistChecked.length] = blist[i];
     }
   }
+  
+  for(var i=0; i<rating.length; i++)
+  {
+    if(rating[i].checked)
+    {
+      selectedRating = rating[i].value;
+    }
+  }
 
   if(name == "" || phone == "" || email == "")
   {
     text = "Please fill in your contact information!";
     alert(text);  
-    return;
+    return false;
   }
   else
   {
@@ -35,16 +43,17 @@ function processForm(){
 
     if(nameRE.test(name) && emailRE.test(email) && phoneRE.test(phone))
     {
-      if(blistChecked.length != 0 && rating.value != "")
+      if(blistChecked.length != 0 && selectedRating != "")
       {
         text = "Thank you for your feedback!";
+        return true;
       }
       else
       {
         text = "You forgot to select your order or your rating!";
       }
       alert(text);
-      return;
+      return false;
     }
     else
     {
@@ -61,7 +70,7 @@ function processForm(){
         text = "Phone is invalid";
       }
       alert(text);
-      return;
+      return false;
     }
   }
 

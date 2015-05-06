@@ -1,11 +1,13 @@
 <tr>
     <td colspan="1" rowspan="1" headers="">
         <div class="form-container">
+             <form id = "orderForm" action="scripts/processOrder.php" method="post">
+              <fieldset>
             <table class="order">
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-1" name="" >
+                            <select id="select-1" name="quantity" >
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -18,7 +20,7 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
@@ -35,7 +37,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-2" name="" >
+                            <select id="select-2" name="quantity" >
                                 <option value="1">1</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -48,7 +50,7 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
@@ -65,7 +67,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-3" name="" >
+                            <select id="select-3" name="quantity" >
                                 <option value="1">1</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -78,7 +80,7 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
@@ -86,7 +88,9 @@
                         <button type="submit" onclick="addToCart(3)">Add to cart</button>
                         </td>
                     </tr>
-            </table>  
+            </table> 
+            </fieldset>
+            </form> 
         </div>   
     </td>
 </tr> 

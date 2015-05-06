@@ -17,8 +17,10 @@
     <?php include 'include/nav.php';?>
     <div id="main">
         <div id="content" style="float: left;">
-            <form id = "profileForm" action="" onsubmit="processForm()">
+            <form id = "profileForm" onsubmit="return processForm();" action="scripts/processFeedback.php" method="post">
               <fieldset>
+                <table id="formStructure">
+                    <tr><td>
                 <table id="formOrder">
                   <tr>
                     <th colspan="2"><h1>Review Us!</h1></th>
@@ -37,23 +39,23 @@
                       <tr>
                       <td>Your Order:</td>
                       <td>
-                        <form id="orderSelection" action="order">
+                        <form id="orderSelection" action="">
                           <div class="drink" align="left">
-                            <input type="checkbox" name="drink" value="Almond" />Almond Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Caramel" />Caramel Milk Tea<br> 
-                            <input type="checkbox" name="drink" value="Chocolate" />Chocolate Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Coconut" />Coconut Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Coffee" />Coffee Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Honeydew" />Honeydew Milk Tea<br>
-                            <input type="checkbox" name="drink" value="HoneyGreen" />Honey Green Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Honey" />Honey Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Tapioca" />Tapioca Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Jasmine" />Jasmine Green Milk Tea<br> 
-                            <input type="checkbox" name="drink" value="Matcha" />Matcha Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Red Bean" />Red Bean Milk Tea<br> 
-                            <input type="checkbox" name="drink" value="Strawberry" />Strawberry Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Taro" />Taro Milk Tea<br>
-                            <input type="checkbox" name="drink" value="Thai" />Thai Milk Tea
+                            <input type="checkbox" name="drink[]" value="Almond Milk Tea" />Almond Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Caramel Milk Tea" />Caramel Milk Tea<br> 
+                            <input type="checkbox" name="drink[]" value="Chocolate Milk Tea" />Chocolate Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Coconut Milk Tea" />Coconut Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Coffee Milk Tea" />Coffee Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Honeydew Milk Tea" />Honeydew Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Honey Green Milk Tea" />Honey Green Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Honey Milk Tea" />Honey Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Tapioca Milk Tea" />Tapioca Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Jasmine Milk Tea" />Jasmine Green Milk Tea<br> 
+                            <input type="checkbox" name="drink[]" value="Matcha Milk Tea" />Matcha Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Red Bean Milk Tea" />Red Bean Milk Tea<br> 
+                            <input type="checkbox" name="drink[]" value="Strawberry Milk Tea" />Strawberry Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Taro Milk Tea" />Taro Milk Tea<br>
+                            <input type="checkbox" name="drink[]" value="Thai Milk Tea" />Thai Milk Tea
                             </div>
                       </form>
                       </td>
@@ -61,15 +63,15 @@
                       <tr>
                       <td>Rating: </td>
                       <td><fieldset class="rating">
-                        <input type="radio" id="star5" name="rating" value="star5" />
+                        <input type="radio" id="star5" name="rating" value="5 stars" />
                         <label for="star5"></label>
-                        <input type="radio" id="star4" name="rating" value="star4" />
+                        <input type="radio" id="star4" name="rating" value="4 stars" />
                         <label for="star4"></label>
-                        <input type="radio" id="star3" name="rating" value="star3" />
+                        <input type="radio" id="star3" name="rating" value="3 stars" />
                         <label for="star3"></label>
-                        <input type="radio" id="star2" name="rating" value="star2" />
+                        <input type="radio" id="star2" name="rating" value="2 stars" />
                         <label for="star2"></label>
-                        <input type="radio" id="star1" name="rating" value="star1" />
+                        <input type="radio" id="star1" name="rating" value="1 star" />
                         <label for="star1"></label>
                       </fieldset></td>
                       </tr>
@@ -79,15 +81,17 @@
                     </tr>
                 </tr>     
                   
-                </table>
-
+                </table></td>
+                <td>
+    	             <h2 style="margin: 25px;">Comments</h2>
+                     <input type="text" name ="comments" size="500" style="width: 300px; height:300px" /></td>
+                </tr></table>
               </fieldset>
+              
           </form>
 
           <script type="text/javascript" src="scripts/feedback.js"></script>
         </div>
-        <h2 style="margin: 25px;">Comments</h2>
-                <input type="text" name ="comments" size="500" style="width: 300px; height:300px" />
     </div>
 </body>
 

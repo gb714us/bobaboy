@@ -17,8 +17,10 @@
     {
         if (document.getElementById("select-" + number).value > 0)
             alert("Added to order!");
+            return true;
         else
             alert("Please select a quantity!")
+            return false;
     }
     </script>
 </head>
@@ -27,6 +29,8 @@
     <?php include 'include/nav.php';?>
     <div id="main">
         <div id="content">
+             <form id = "orderForm" action="scripts/processOrder.php" method="post">
+              <fieldset>
             <table id="products">
                 <tr>
                     <td class="data">
@@ -47,7 +51,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-1" name="" >
+                            <select id="select-1" name="quantity-1" value="Almond Milk Tea">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -60,12 +64,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(1)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(1)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -77,7 +81,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-2" name="" >
+                            <select id="select-2" name="quantity-2" value="Caramel Milk Tea">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -90,12 +94,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(2)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(2)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -107,7 +111,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-3" name="" >
+                            <select id="select-3" name="quantity-3" value="Chocolate Milk Tea">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -120,12 +124,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(3)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(3)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -150,7 +154,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-4" name="" >
+                            <select id="select-4" name="quantity-4" value="Coconut Milk Tea">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -163,12 +167,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                           Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(4)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(4)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -180,7 +184,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-5" name="" >
+                            <select id="select-5" name="quantity-5" value="Coffee Milk Tea">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -193,12 +197,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(5)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(5)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -210,7 +214,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-6" name="" >
+                            <select id="select-6" name="quantity-6"value="Honeydew Milk Tea" >
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -223,12 +227,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(6)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(6)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -253,7 +257,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-7" name="" >
+                            <select id="select-7" name="quantity-7" value="Honey Green Tea Milk Tea">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -266,12 +270,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(7)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(7)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -283,7 +287,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-8" name="" >
+                            <select id="select-8" name="quantity-8" value="Honey Milk Tea">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -296,12 +300,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(8)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(8)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -313,7 +317,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-9" name="" >
+                            <select id="select-9" name="quantity-9" value="Tapioca Milk Tea">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -326,12 +330,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(9)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(9)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -356,7 +360,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-10" name="" >
+                            <select id="select-10" name="quantity-10" value="Jasmine Green Milk Tea">
                                 <option value="0">0</option>
                                <option value="1">1</option>
                                 <option value="2">2</option>
@@ -369,12 +373,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(10)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(10)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -386,7 +390,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-11" name="" >
+                            <select id="select-11" name="quantity-11" value="Matcha Milk Tea" >
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -399,12 +403,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(11)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(11)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -416,7 +420,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-12" name="" >
+                            <select id="select-12" name="quantity-12" value="Red Bean Milk Tea">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -429,12 +433,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(12)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(12)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -459,7 +463,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-13" name="" >
+                            <select id="select-13" name="quantity-13" value="Strawberry Milk Tea">
                                 <option value="0">0</option>
                           <option value="1">1</option>
                                 <option value="2">2</option>
@@ -472,12 +476,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(13)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(13)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -489,7 +493,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-14" name="" >
+                            <select id="select-14" name="quantity-14" value="Taro Milk Tea">
                                 <option value="0">0</option>
                         <option value="1">1</option>
                                 <option value="2">2</option>
@@ -502,12 +506,12 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(14)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(14)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
@@ -519,7 +523,7 @@
                     <tr>
                         <td >
                             Quantity:
-                            <select id="select-15" name="" >
+                            <select id="select-15" name="quantity-15" value="Thai Milk Tea">
                                 <option value="0">0</option>
                           <option value="1">1</option>
                                 <option value="2">2</option>
@@ -532,15 +536,17 @@
                             </select>
                         </td>
                         <td>
-                            Boba? <input type="checkbox" name="" value="">
+                            Boba? <input type="checkbox" name="boba" value="boba">
                         </td>
                         <td style="display: block">
                             
                         <br />
-                        <button type="submit" onclick="addToCart(15)">Add to cart</button>
+                        <button id="submitButton" type="submit" onclick="return addToCart(15)">Add to cart</button>
                         </td>
                     </tr>
             </table>  
+            </fieldset>
+            </form>
         </div>   
     </td>
 </tr>

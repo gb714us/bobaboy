@@ -7,9 +7,8 @@
         <li class="nav-link"><a href="menu.php">Menu</a></li>
         <li class="nav-link"><a href="locations.php">Locations</a></li>
         <li class="nav-link"><a href="about.php">About</a></li>
-        <li class="nav-link"><a href="feedback.php">Contact Us</a></li>
+        <li class="nav-link"><?php include("include/welcome.php");?></li>
     </ul>
-    <?php include("include/welcome.php");?>
 </nav>
 <div class="container">
     <div id="side">
