@@ -192,7 +192,6 @@ nav#nav-bar ul li {
 
 li.nav-link a {
     right: 0;
-    padding: 10px;
     font-size: 1.2em;
 }
 
@@ -203,16 +202,11 @@ li a {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    line-height: 40px;
     right: 0;
 }
 
-li a:hover {
+li.nav-link a:hover {
     color: rgba(255, 170, 0, 1);
-    background-color: #FFF;
-    -webkit-box-shadow: 0px 0px 5px 0px #000000;
-    -moz-box-shadow: 0px 0px 5px 0px #000000;
-    box-shadow: 0px 0px 5px 0px #000000;
     max-height: 100%;
 }
 
@@ -280,7 +274,7 @@ h1#location {
     text-align: left;
 }
 
-div#statement {
+div.statement {
     display: block;
     text-align: justify;
     background: white;
@@ -294,7 +288,7 @@ div#statement {
     height: 20%;
 }
 
-#main-pic {
+#pic_container {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -308,8 +302,8 @@ div#statement {
 }
 
 table#products{
-	width: 50%;
-	height: 80%;
+    width: 50%;
+    height: 80%;
 }
 
 .div-float {
@@ -324,9 +318,9 @@ table#products{
 
 .test-box
 {
-	padding: 20px;
-	background-color: rgba(255,255,255,.85);
-	border-radius: 2px;
+    padding: 20px;
+    background-color: rgba(255,255,255,.85);
+    border-radius: 2px;
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
     color: #111;
 }
@@ -361,39 +355,39 @@ td img {
 /*}
 /*=======*/
 table#products td img{
-	max-height: 200px;
-	max-width: 200px;
-	padding: 10px;
-	margin: 20px;
+    max-height: 200px;
+    max-width: 200px;
+    padding: 10px;
+    margin: 20px;
 }
 
 h2#story{
- 	text-align: left;
- 	font-size: 2.0em;
- 	font-family: 'Raleway';
- 	margin: 10px;
- 	font-weight: bold;
+    text-align: left;
+    font-size: 2.0em;
+    font-family: 'Raleway';
+    margin: 10px;
+    font-weight: bold;
 }
 
 #story2
 {
-	width: 40%;
-	margin-left: 20px;
-	display: inline-block;
-	vertical-align: 450px;
+    width: 40%;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: 450px;
 }
 p#description{
-	margin-top: 20px;
-	margin-left: 20px;
-	text-align: justify;
-	/*width: 40%;*/
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: justify;
+    /*width: 40%;*/
 }
 
 #aboutImage{
-	margin-right: 10px;
-	margin-bottom: 100px;
-	width: 50%;
-	height: 100%;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    width: 50%;
+    height: 100%;
 }
 
 .order
@@ -456,3 +450,71 @@ input#comments
     height: 500px;
 }
 
+/*.links
+{
+    margin: 0px;
+    padding: 0px;
+}*/
+
+/* for the always-visible menu options */
+/*.links ul
+{
+    right: 0;
+    display: inline;
+    text-align: center;
+    overflow: auto;
+}
+
+.links li {
+display: inline-block;
+padding: 0;
+margin: 0;
+float: left; 
+list-style: none; 
+font: bold .7em;
+}
+.links li a {
+color: #fff;
+    margin-right: 40px;
+    margin-left: 40px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    right: 0;
+}
+.links li a:hover {
+    color: rgba(255, 170, 0, 1);
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 0px 5px 0px #000000;
+    -moz-box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow: 0px 0px 5px 0px #000000;
+    max-height: 100%;
+}*/
+
+
+.links div {
+    position: absolute;
+    display: block;
+    background-color: rgba(100, 100, 100, .7);
+    border: 1px solid rgba(100, 100, 100, 1);
+    color: rgba(100, 100, 100, 1);
+    visibility: hidden;
+    -webkit-box-shadow: 0px 0px 5px 0px #000000;
+    -moz-box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+
+.links div a {
+    display: block;
+    width: 156px;
+    padding: 5px 1px;
+    text-align: left;
+    text-decoration: none;
+    font: bold .9em;
+    line-height: 40px;
+}
+
+.links div a:hover {
+    color: rgba(255, 170, 0, 1);
+}

@@ -10,23 +10,22 @@
     <link rel="stylesheet" type="text/css" href="boba_style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+    <script src="calculate.js"></script>
     <title>Moba Boba</title>
 
-    <script>
-    function addToCart(number)
-    {
-        if (document.getElementById("select-" + number).value > 0)
-            alert("Added to order!");
-        else
-            alert("Please select a quantity!")
-    }
-    </script>
 </head>
 
 <body>
     <?php include 'include/nav.php';?>
     <div id="main">
-        <div id="content">
+
+        <div class="statement" style="text-align: center; height:auto; width:70%; margin: 0 auto; ">
+        <p>ALL DRINKS ARE $3.00. BOBA IS ADDITIONAL 50&cent;.</p>
+        <div style="display:block; margin-left: auto; margin-right: auto">
+            <input type="button" name="DONE" value="DONE" onclick="calculate()" style="margin: 30px;">
+        </div>
+        </div>
+        <div id="content" style="width:70%; margin: 0 auto;">
             <table id="products">
                 <tr>
                     <td class="data">
@@ -547,6 +546,7 @@
             </table>
         </div>
     </div>
+
 </body>
 
 </html>
